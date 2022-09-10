@@ -1,0 +1,1078 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+p{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Animations */
+
+@keyframes load {
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slider{
+    0%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Popup */
+
+.popup-back{
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    background-color: #010002e6;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.popup-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 270px;
+}
+
+.popup-title{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+
+.popup-text{
+    margin-top: 27px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+}
+
+.popup-btn{
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    padding: 10px 60px;
+    border: none;
+    margin-top: 60px;
+    background-color: #3369D3;
+    color: white;
+}
+
+/* Mobile menu */
+
+.menu-icon-div{
+    display: none;
+}
+
+.hamburger-icon{
+    cursor: pointer;
+}
+
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 9999;
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-menu-header{
+    display: flex;
+}
+
+.header-line{
+    width: 100%;
+    border-bottom: 1px solid #343434;
+}
+
+.mobile-menu-logo{
+    margin: 20px 32px;
+    margin-left: 38px;
+}
+
+.x-icon{
+    cursor: pointer;
+    width: auto;
+    margin: 20px 44px;
+}
+
+.clouse-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mobile-navigation{
+    border: none;
+    padding: 0px 55px;
+}
+
+.mobile-menu-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-link{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: white;
+}
+
+.mobile-menu-separator{
+    width: 100%;
+    height: 1px;
+    margin: 50px 0px;
+    background: #343434;
+}
+
+.mobile-btn-div{
+    padding: 0px 32px;
+    margin-bottom: 90px;
+}
+
+.active-mobile-menu{
+    left: 0;
+    transform: translateX(0%);
+    transition: transform 450ms;
+}
+
+.hidden-mobile-menu{
+    transform: translateX(-100%);
+    transition: transform 450ms;
+}
+
+/* Header */
+
+header{
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    padding: 0px 32px;
+    display: flex;   
+    justify-content: center;
+}
+
+.header-div{
+    display: flex;
+    width: 100%;
+    max-width: 1404px;
+    justify-content: space-between;
+}
+
+.navigation-div{
+    width: 100%;
+}
+
+nav{
+    padding: 30px 0px;
+    border-bottom: 1px solid #FFFFFF40;
+}
+
+.menu-header{
+    display: flex;
+    gap: 60px;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.links-li-animation{
+    animation: load 600ms;
+}
+
+.menu-header-link{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.menu-header-link:hover{
+    color: #3369D3;
+}
+
+.logo-bmw{
+    margin-top: 20px;
+    margin-left: 30px;
+    animation: load 600ms;
+}
+
+.header-bottom-div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-bottom-p{
+    margin-top: 10px;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    font-size: 16px;
+    animation: load 600ms;
+}
+
+/* Hero section */
+
+.hero-textblock{
+    z-index: 999;
+    margin-top: 136px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 728px;
+}
+
+.hero-div{
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1468px;
+}
+
+.hero-top{
+    margin-top: 214px;
+}
+
+.logo-hero-i{
+    width: auto;
+    height: 48px;
+    animation: load 600ms;
+}
+
+h1{
+    margin: 0px;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    animation: load 600ms;
+}
+
+.hero-text-p{
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    animation: load 600ms;
+}
+
+.hero-bottom-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    animation: load 600ms;
+}
+
+.tabs-div{
+    display: flex;
+    gap:15px;
+    width: 33%;
+}
+
+.tab{
+    cursor: pointer;
+    width: 60px;
+    height: 5px;
+    background: white;
+}
+
+.active-tab{
+    background: #3369D3;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+
+.drive-test-button{
+    cursor: pointer;
+    padding: 15px 97px;
+    background: #3369D3;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+}
+
+.image-grey{
+    background: linear-gradient(90deg, #000000bf 0%, rgba(0, 0, 0, 0.0001) 100%), url("./img/slider1.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.image-blue{
+    background: linear-gradient(90deg, #3369D3bf 0%, rgba(0, 0, 0, 0.0001) 100%), url("./img/slider1.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.image-white{
+    background: linear-gradient(90deg, #ffffffbf 0%, rgba(0, 0, 0, 0.0001) 100%), url("./img/slider1.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.image-silder{
+    display: none;
+    height: 864px;
+}
+
+.active-img{
+    display: block;
+    animation: slider 800ms ease-in;
+}
+/* Facts about iX sections */
+
+.content-section{
+    display: flex;
+    align-items: center;
+    gap: 154px;
+    max-width: 1920px;
+    padding: 0px 80px;
+    padding-top: 180px;
+    margin: auto;
+}
+
+.facts-img-div{
+    max-width: 872px;
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.facts-img-one{
+    transform: translateY(91px);
+    width: 37%;
+}
+
+.facts-img-two{
+    width: 63%;
+}
+.refuel-icon{
+    width: auto;
+    height: 24px;
+    margin-bottom: 13px;
+}
+
+h2{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 8px 0px;
+}
+
+.facts-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 58px;
+    grid-gap: 60px 30px;
+}
+
+.fact-div{
+    max-width: 184px;
+}
+
+.fact-number{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.separator{
+    margin-top: 3px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 2px;
+    background-color: #70707040;
+}
+
+.separator-two{
+    width: 15px;
+    position: absolute;
+    height: 2px;
+    background-color: #6D6D6D40;
+}
+
+.fact-text-p{
+    font-family: 'Open Sans', sans-serif;
+    color: #4E4E4E;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Innovation and aerodynamics on BMW iX sections */
+
+.innovation-section{
+    padding-top: 300px;
+    justify-content: flex-end;
+}
+
+.innovation-text-div{
+    max-width: 600px;
+}
+
+.car-icon{
+    margin-bottom: 13px;
+    width: auto;
+    height: 20px;
+}
+
+.innovation-text-one-p{
+    margin-top: 73px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #707070;
+}
+
+.innovation-text-two-p{
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4E4E;
+}
+
+.innovation-img-div{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.innovation-img-one{
+    width: 63%;
+}
+
+.innovation-img-two{
+    transform: translateY(-91px);
+    width: 37%;
+}
+
+/* Gallery section */
+
+.gallery-section{
+    padding: 0px 10px;
+    padding-top: 190px;
+}
+
+/* Form section */
+
+.form-section{
+    max-width: 1820px;
+    position: relative;
+    padding: 170px 20px;
+    padding-bottom: 180px;
+    margin: auto;
+}
+
+form{
+    z-index: 999;
+    position: relative;
+    background-color: white;
+    padding: 90px;
+    margin: auto;
+    box-shadow: 3px 3px 60px #00000012;
+    max-width: 812px;
+}
+
+.form-title-div{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    display: flex;
+}
+
+.form-title-h2{
+    margin-bottom: 15px;
+}
+
+.form-title-span{
+    font-size: 21px;
+    margin-left: 5px;
+}
+
+.form-text-p{
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.mb-10px{
+    margin-bottom: 10px;
+}
+
+.mb-90px{
+    margin-bottom: 90px;
+}
+
+.form-span{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.gender-div{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.gender-inpute-div{
+    display: flex;
+    align-items: flex-end;
+}
+
+.gender-inpute{
+    height: 22px;
+    width: 22px;
+    margin: 0px;
+}
+
+.gender-lable{
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.text-inpute-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    max-width: 506px;
+}
+
+.text-inpute{
+    border: 1px solid #70707040;
+    color: #4E4E4E;
+    padding: 16px 22px;
+}
+
+.form-submit-btn{
+    cursor: pointer;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    padding: 15px 90px;
+    background-color: #3369D3;
+    color: white;
+    border: none;
+    min-width: 243px;
+}
+
+.golden-bmw-front{
+    z-index: 2;
+    max-width: 663px;
+    position: absolute;
+    top: 330px;
+    right: 110px;
+}
+
+.golder-bmw{
+    z-index: 2;
+    max-width: 638px;
+    position: absolute;
+    left: 200px;
+    top: 680px;
+}
+
+.shape-one{
+    position: absolute;
+    z-index: 1;
+    max-width: 300px;
+    left: 370px;
+    top: 310px;
+}
+
+.shape-two{
+    position: absolute;
+    z-index: 1;
+    max-width: 446px;
+    left: 150px;
+    top: 540px;
+}
+
+.shape-three{
+    position: absolute;
+    z-index: 1;
+    max-width: 446px;
+    right: 310px;
+    top: 480px;
+}
+
+.shape-foure{
+    position: absolute;
+    z-index: 1;
+    max-width: 550px;
+    right: 560px;
+    bottom: -50px;
+}
+
+/* Footer */
+
+footer{
+    background-color: #E6E6E6;
+}
+
+.footer-top{
+    max-width: 1403px;
+    margin: auto;
+    padding: 0px 32px;
+}
+
+.footer-top-socials-div{
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.footer-top-socials-span{
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #707070;
+}
+
+.footer-top-socials-img-div{
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-top-columns{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 115px;
+}
+
+.footer-top-columne-div{
+    width: 30%;
+}
+
+.footer-top-columne-span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #707070;
+}
+
+.footer-top-columne-list{
+    margin-top: 30px;
+}
+
+.footer-top-columne-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 32px;
+    color: #707070;
+}
+
+.footer-top-li:hover{
+    transform: translateX(7px);
+    transition: transform 300ms;
+}
+
+.footer-bottom{
+    height: 60px;
+    background-color: white;
+}
+
+.footer-bottom-div{
+    display: flex;
+    align-items: center;
+    max-width: 1403px;
+    margin: auto;
+    height: 100%;
+    padding: 0px 20px;
+}
+
+.footer-bottom-span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4E4E;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1360px) {
+    /* Innovations */
+    .innovation-text-div {
+        max-width: 500px;
+    }
+     /* Form */
+     .golden-bmw-front,
+     .golder-bmw,
+     .shape-one,
+     .shape-two,
+     .shape-three,
+     .shape-foure{
+         display: none;
+     }
+}
+
+@media screen and (max-width: 1200px) {
+    /* Hero */
+    .btn-div {
+        width: auto; 
+    }
+    /* Facts */
+    .facts-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* Innovations */
+    .innovation-text-div {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Header */
+    .navigation-div {
+        display: none;
+    }
+    .menu-icon-div{
+        cursor: pointer;
+        display: block;
+        margin-top: 30px;
+    }
+    /* Hero-section */
+    .hero-bottom-div {
+        gap: 60px;
+        flex-direction: column-reverse;
+    }
+    .tabs-div,
+    .btn-div {
+        width: 100%;
+    }
+    .tabs-div{
+        justify-content: center;
+    }
+    /* Facts */
+    .content-section{
+        padding: 60px 0px;
+        flex-direction: column;
+    }
+    .facts-div{
+        width: 100%;
+        padding: 0px 32px;
+    }
+    .facts-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .facts-img-div,
+    .innovation-img-div,
+    .innovation-text-div {
+        width: 100%;
+        max-width: 992px;
+    }
+    /* Innovation */
+    .innovation-section{
+        flex-direction: column-reverse;
+        padding: 90px 0px;
+        gap: 60px;
+    }
+    .innovation-text-div{
+        padding: 0px 32px;
+    }
+    /* Gallery */
+    .gallery-section {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    /* Hero */
+    .hero-top{
+        margin-top: 78px;
+        max-width: 300px;
+    }
+    h1{
+        margin: 33px 0px;
+        line-height: 80px;
+    }    
+    /* Form */
+    .form-section{
+        padding:450px 0px;
+    }
+    form{
+        box-shadow: none;
+        background-color: #ffffff00;
+        padding: 0px 32px;
+    }
+    .golden-bmw-front{
+        display: block;
+        top: 60px;
+        right: 150px;
+    }
+
+    .golder-bmw{
+        display: block;
+        top: auto;
+        bottom: 0;
+        left: 180px;
+    }
+    .shape-one,
+    .shape-two,
+    .shape-three
+    .shape-foure{
+        display: none;
+    }
+    /* Footer */
+    .footer-top{
+        padding-top: 90px;
+    }
+    .footer-top-socials-div{
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    .footer-top-socials-div{
+        gap: 30px;
+    }
+    .footer-top-socials-img-div{
+        margin-bottom: 30px;
+    }
+    .footer-top-columns{
+        flex-direction: column;
+        gap: 60px;
+        margin: 90px 0px;
+    }
+
+    .footer-top-columne-div {
+        width: 100%;
+    }
+    .footer-bottom-div {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Mobile-menu */
+    .mobile-link {
+        font-size: 16px;;
+    }
+    .mobile-menu-separator {
+        margin: 30px 0px;
+    }    
+    /* Hero */
+    .hero-textblock{
+        margin-top: 0px;
+    }
+    .hero-top{
+        margin-top: 156px;
+    }
+    .hero-bottom-div{
+        margin-bottom: 38px;
+    }
+    .logo-hero-i{
+        height: 32px;
+    }
+    h1 {
+        line-height: 60px;
+        max-width: 200px;
+        font-size: 48px;
+        margin: 20px 0px;
+    }
+    .drive-test-button {
+        padding: 10px 56px;
+        font-size: 14px;
+    }
+    .image-silder{
+        height: 720px;
+    }
+    .image-grey{
+        background: linear-gradient(90deg, #000000bf 0%, rgba(0, 0, 0, 0.0001) 100%), url("./img/slider1@2x (2).png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .image-blue{
+        background: linear-gradient(90deg, #3369D3bf 0%, rgba(0, 0, 0, 0.0001) 100%), url("./img/slider1@2x (2).png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .image-white{
+        background: linear-gradient(90deg, #ffffffbf 0%, rgba(0, 0, 0, 0.0001) 100%), url("./img/slider1@2x (2).png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Facts */
+    .content-section {
+        gap: 90px;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .facts-img-one {
+        transform: translateY(41px);
+    }
+    .facts-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .fact-div {
+        max-width: 100%;
+    }
+    /* Innovation */
+    .innovation-img-two {
+        transform: translateY(-41px);
+    }
+    .innovation-section {
+        gap: 60px;
+    }
+    .innovation-text-one-p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .innovation-text-two-p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .innovation-text-one-p {
+        margin-top: 30px;
+    }
+    .innovation-text-two-p {
+        margin-top: 15px;
+    }
+
+    /* Form */
+
+    .form-section {
+        padding-top: 300px;
+        padding-bottom: 280px;
+    }
+    .form-text-p{
+        font-size: 16px;
+    }
+    .form-title-div {
+        width: 400px;
+    }
+    .form-title-span {
+        font-size: 16px;
+    }
+    .mb-90px{
+        margin-bottom: 60px;
+    }
+    .gender-inpute-div {
+        align-items: center;
+    }
+    .gender-lable {
+        font-size: 13px;
+    }
+    .text-inpute {
+        padding: 11px 22px;
+    }
+    .text-inpute-div {
+        gap: 15px;
+    }
+    .text-inpute-div {
+        margin-bottom: 30px;
+    }
+    .form-submit-btn {
+        min-width: 165px;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        padding: 10px 60px;
+    }
+}
+
+@media screen and (max-width: 360px)  {
+    .shape-three{
+        display: block;
+        top: 100px;
+        right: 240px;
+    }
+    .shape-two{
+        display: block;
+        top: auto;
+        bottom: 50px;
+        left: 120px;
+    }
+}

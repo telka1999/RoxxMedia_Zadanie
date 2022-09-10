@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BMW iX</title>
+</head>
+<body>
+
+    <!--Popup-->
+
+    <div class="popup-back hidden">
+        <div class="popup-div">
+            <div class="popup-title">DZIĘKUJEMY</div>
+            <p class="popup-text">Skontaktujemy się z Tobą w najbliższym możliwym terminie.</p>
+            <button class="popup-btn">OK</button>
+        </div>
+    </div>
+
+    <!--Mobile menu-->
+
+    <div class="mobile-menu hidden-mobile-menu">
+
+        <div>
+            <div class="mobile-menu-header">
+                <div class="header-line"></div>
+                <div class="mobile-menu-logo">
+                    <img src="./img/bmw_logo.svg" alt="Logo BMW"/>
+                </div>
+            </div>
+    
+            <div class="clouse-icon">
+                <img class="x-icon" src="./img/X_icon.svg" alt="X icon" width="17" height="17"/>
+            </div>
+        </div>
+
+        <nav class="mobile-navigation">
+            <ul class="mobile-menu-list">
+                <li>
+                    <a class="mobile-link" href="#new">Nowe BMW iX</a>
+                </li>
+                <div class="mobile-menu-separator"></div>
+                <li>
+                    <a class="mobile-link" href="#form">Umów jazdę próbną</a>
+                </li>
+                <div class="mobile-menu-separator"></div>
+                <li>
+                    <a class="mobile-link" href="#gallery">Galeria</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-btn-div">
+            <div class="btn-div">
+                <a href="#form">
+                    <button class="drive-test-button">UMÓW JAZDĘ PRÓBNĄ</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Header-->
+
+    <header>
+
+        <div class="header-div">
+
+            <div class="menu-icon-div">
+                <img id="hamburger-icon" src="./img/Group22.svg" alt="menu-icon">
+            </div>
+
+            <div class="navigation-div">
+                <nav>
+                    <ul class="menu-header">
+                        <li class="links-li-animation">
+                            <a class="menu-header-link" href="#new">Nowe BMW iX</a>
+                        </li>
+                        <li class="links-li-animation">
+                            <a class="menu-header-link" href="#form">Umów jazdę próbną</a>
+                        </li>
+                        <li class="links-li-animation">
+                            <a class="menu-header-link" href="#gallery">Galeria</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-bottom-div">
+                    <p class="header-bottom-p"><strong>Radość</strong> z jazdy</p>
+                </div>
+            </div>
+
+            <div class="logo-bmw">
+                <img src="./img/bmw_logo.svg" alt="Logo BMW"/>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!--Carusel img-->
+
+        <section id="new" class="silder-section">
+
+           <div class="silder-section">
+
+                <div class="hero-textblock">
+
+                <div class="hero-div">
+                    <div class="hero-top">
+                        <img src="./img/bmw_i_logo.svg" alt="Logo i"  class="logo-hero-i"/>
+                        <h1>NOWE BMW iX</h1>
+                        <p class="hero-text-p">PIONIER NOWEJ ERY</p>
+                    </div>
+
+                    <div class="hero-bottom-div">
+                        <div class="tabs-div">
+                            <div data-img=".image-grey" class="tab active-tab"></div>
+                            <div data-img=".image-blue" class="tab"></div>
+                            <div data-img=".image-white" class="tab"></div>
+                        </div>
+                        <div class="btn-div">
+                            <a href="#form">
+                                <button class="drive-test-button">UMÓW JAZDĘ PRÓBNĄ</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+
+                <div class="image-silder image-grey active-img" ></div>
+                <div class="image-silder image-blue"></div>
+                <div class="image-silder image-white"></div>
+        
+           </div>
+
+        </section>
+
+        <!--Facts about iX sections-->
+
+        <section class="content-section" data-aos="fade-up" data-aos-offset="700" data-aos-easing="ease-in-out">
+
+            <div class="facts-img-div">
+                <img class="facts-img-one" src="./img/foto1_1.png" alt="Front of red BMW iX" />
+                <img class="facts-img-two" src="./img/foto1_2.png" alt="Two BMW iX standing side by side, one silver the other one red" />
+            </div>
+
+            <div class="facts-div">
+                <img class="refuel-icon" src="./img/ico_1.svg" />
+                <h2>FAKTY<br>O NOWYM BMW iX.</h2>
+                <div class="facts-grid">
+                    <div class="fact-div">
+                        <span class="fact-number">01</span>
+                        <div class="separator">
+                            <div class="separator-two"></div>
+                        </div>
+                        <p class="fact-text-p">
+                            Ponad 600 km zasięgu*
+                        </p>
+                    </div>
+                    <div class="fact-div">
+                        <span class="fact-number">02</span>
+                        <div class="separator">
+                            <div class="separator-two"></div>
+                        </div>
+                        <p class="fact-text-p">
+                            Elektryczny napęd na wszystkie koła z dwiema osiami napędzanymi elektrycznie i ponad 500 KM (370 kW) *
+                        </p>
+                    </div>
+                    <div class="fact-div">
+                        <span class="fact-number">03</span>
+                        <div class="separator">
+                            <div class="separator-two"></div>
+                        </div>
+                        <p class="fact-text-p">
+                            Od 0 do 100 km / h w mniej niż 5 sekund *
+                        </p>
+                    </div>
+                    <div class="fact-div">
+                        <span class="fact-number">04</span>
+                        <div class="separator">
+                            <div class="separator-two"></div>
+                        </div>
+                        <p class="fact-text-p">
+                            Ładowanie 120 km w 10 minut *
+                        </p>
+                    </div>
+                    <div class="fact-div">
+                        <span class="fact-number">05</span>
+                        <div class="separator">
+                            <div class="separator-two"></div>
+                        </div>
+                        <p class="fact-text-p">
+                            Publiczne szybkie ładowanie od 10 do 80% w mniej niż 40 minut
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Innovation and aerodynamics on BMW iX sections-->
+
+        <section class="content-section innovation-section" data-aos="fade-up" data-aos-offset="700" data-aos-easing="ease-in-out">
+
+            <div class="innovation-text-div">
+                <img class="car-icon" src="./img/ico_2.svg" />
+                <h2>INNOWACYJN<br>AERODYNAMIKA<br>BMW iX.</h2>
+                <p class="innovation-text-one-p">
+                    BMW iX w każdym milimetrze swojej dynamicznej stylistyki wdraża zasadę „forma podąża za funkcją”. 
+                </p>
+                <p class="innovation-text-two-p">
+                    Widać to przede wszystkim po gładkiej karoserii ze zwężoną nadbudową kabiny i zredukowanymi fugami oraz po płaskim podwoziu. W połączeniu z zamkniętym przodem oraz dyfuzorem z tyłu i niezwykłymi detalami, takimi jak wpuszczane klamki czy zintegrowane z listwami szybowymi lusterka zewnętrzne, BMW iX osiąga doskonały współczynnik Cx wynoszący zaledwie 0,25. Dzięki temu łączy w sobie zasięg i wydajność z innowacyjną konstrukcją SAV-a.
+                </p>
+            </div>
+
+            <div class="innovation-img-div">
+                <img class="innovation-img-one" src="./img/foto2_1.png" alt="The side of a golden BMW iX" />
+                <img class="innovation-img-two" src="./img/foto2_2.png" alt="The back of a golden BMW iX" />
+            </div>
+
+        </section>
+
+        <!--Gallery section-->
+
+        <section id="gallery" class="gallery-section" data-aos="fade-up" data-aos-offset="500" data-aos-easing="ease-in-out">
+            <picture>
+                <source media="(min-width: 769px)" srcset="./img/d_gallery.png">
+                <img src="./img/Group 57@2x.png" alt="The red interior of the BMW iX" />
+            </picture>
+        </section>
+
+        <!--Form section-->
+
+        <section id="form" class="form-section" data-aos="fade-up" data-aos-offset="700" data-aos-easing="ease-in-out">
+
+            <img class="shape-one" src="./img/Path 13.svg" />
+            <img class="shape-two" src="./img/Path 15.svg" />
+            <img class="shape-three" src="./img/Path 12.svg" />
+            <img class="shape-foure" src="./img/Path 14.svg" />
+
+            <img class="golden-bmw-front" src="./img/bmw-ix-front.png" alt="The front of a golden BMW iX" />
+            <img class="golder-bmw" src="./img/13273-2022-bmw-ix.png" alt="The front of a golden BMW iX" />
+
+            <form>
+                <div  class="form-title-div">
+                    <h2 class="form-title-h2">UMÓW JAZDĘ PRÓBNĄ</h2><div> <span class="form-title-span">BMW iX</span></div>
+                </div>
+                <p class="form-text-p mb-10px">Zachęcamy do ograniczenia poruszania się i pozostania w domu.</p>
+                <p class="form-text-p mb-90px">Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego formularza.</p>
+                <span class="form-span">Wypełnij formularz swoimi danymi.</span><br>
+                <div class="gender-div">
+                    <div class="gender-inpute-div">
+                        <input class="gender-inpute" type="radio" id="Gender1" name="Gender" value="Pan"/>
+                        <label class="gender-lable" for="Gender1">Pan</label>
+                    </div>
+                    <div class="gender-inpute-div">
+                        <input class="gender-inpute" type="radio" id="Gender2" name="Gender" value="Pani"/>
+                        <label class="gender-lable" for="Gender2">Pani</label>
+                    </div>
+                </div>               
+                <div class="text-inpute-div">
+                    <input id="nameInpute" class="text-inpute" type="text" placeholder="Imię*" required />
+                    <input id="lastNameInpute" class="text-inpute" type="text" placeholder="Nazwisko*" required />
+                    <input id="emailInpute" class="text-inpute" type="text" placeholder="E-mail*" required />
+                    <input id="phoneInpute" class="text-inpute" type="text" placeholder="Numer telefonu*" required />
+                </div>
+                <input class="form-submit-btn" type="submit" value="WYŚLIJ" />
+            </form>
+
+        </section>
+
+    </main>
+
+    <!--Footer-->
+
+    <footer>
+
+        <section class="footer-top">
+
+            <div class="footer-top-socials-div">
+                <span class="footer-top-socials-span">Dołącz do nas</span>
+                <div class="footer-top-socials-img-div">
+                    <img class="social-icon" src="./img/NoPath.png" alt="Facebook icon" />
+                    <img class="social-icon" src="./img//NoPath — kopia.png" alt="Instagram icon" />
+                    <img class="social-icon" src="./img/NoPath — kopia (2).png" alt="Youtube icon" />
+                    <img class="social-icon" src="./img/NoPath — kopia (3).png" alt="LinkedIn icon" />
+                    <img class="social-icon" src="./img/NoPath — kopia (4).png" alt="Twitter icon" />
+                </div>
+            </div>
+
+            <div class="footer-top-columns">
+
+                <div class="footer-top-columne-div" class="content-section" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-out">
+                    <span class="footer-top-columne-span">Strefa Klienta</span>
+                    <ul class="footer-top-columne-list">
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Centrum Obsługi Klienta BMW</a>
+                        </li>
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Znajdź dealera BMW</a>
+                        </li>
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Pobierz cennik / broszury</a>
+                        </li>
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Często zdawane pytania</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-top-columne-div" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-out">
+                    <span class="footer-top-columne-span">Poznaj BMW</span>
+                    <ul class="footer-top-columne-list">
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Informacje prasowe</a>
+                        </li>
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">BMW Polksa</a>
+                        </li>
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Kariera</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-top-columne-div" data-aos="fade-in" data-aos-offset="100" data-aos-easing="ease-in-out">
+                    <span class="footer-top-columne-span">Informacje prawne</span>
+                    <ul class="footer-top-columne-list">
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Mapa serwisu</a>
+                        </li>
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Note prawne / Prywatność</a>
+                        </li>
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Polityka cookie</a>
+                        </li>
+                        <li class="footer-top-li">
+                            <a class="footer-top-columne-link" href="/">Warunki korzystania z MyBMW</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="footer-bottom">
+            <div class="footer-bottom-div">
+                <span class="footer-bottom-span">
+                    © BMW Polska 2020
+                </span>
+            </div>
+        </section>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
